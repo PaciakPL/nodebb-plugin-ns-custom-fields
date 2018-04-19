@@ -60,7 +60,7 @@
         custom_header.plugins.push({
             route: '/plugins/custom-fields',
             icon : faIcon,
-            name : 'Custom Fields'
+            name : 'Dodatkowe pola'
         });
         callback(null, custom_header);
     };
@@ -96,7 +96,7 @@
     Filter.userAccountEdit = function (data, callback) {
         data.editButtons.push({
             link: '/user/' + data.userslug + '/edit/custom-fields',
-            text: 'Change Extra'
+            text: 'Zmień dodatkowe pola'
         });
 
         callback(null, data);
