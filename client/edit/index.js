@@ -29,7 +29,7 @@ define('forum/client/plugins/custom-fields-edit', [], function () {
                 return app.alertError(error.message);
             }
 
-            app.alertSuccess('Custom fields are saved.');
+            app.alertSuccess('Zmiany zostały poprawnie zapisane.');
         });
     };
 
@@ -39,7 +39,7 @@ define('forum/client/plugins/custom-fields-edit', [], function () {
         var $button = $('<a></a>')
             .addClass('btn btn-primary btn-block')
             .attr('href', '#')
-            .text('Save')
+            .text('Zapisz zmiany')
             .on('click', function () {
                 Edit.save();
             });
